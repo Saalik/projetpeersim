@@ -7,18 +7,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="31fcf336-3e20-4a5f-9fe3-17cd0869cf44" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/projectpeersim.jar" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/bench/benches/peersim1.py.bench" afterPath="$PROJECT_DIR$/bench/benches/peersim1.py.bench" />
-      <change beforePath="$PROJECT_DIR$/bench/scripts/peersim1.py" afterPath="$PROJECT_DIR$/bench/scripts/peersim1.py" />
       <change beforePath="$PROJECT_DIR$/out/production/projectpeersim/conf/confPro27.co" afterPath="$PROJECT_DIR$/out/production/projectpeersim/conf/confPro27.co" />
       <change beforePath="$PROJECT_DIR$/out/production/projectpeersim/conf/confPro284.co" afterPath="$PROJECT_DIR$/out/production/projectpeersim/conf/confPro284.co" />
       <change beforePath="$PROJECT_DIR$/out/production/projectpeersim/manet/GossipControler.class" afterPath="$PROJECT_DIR$/out/production/projectpeersim/manet/GossipControler.class" />
       <change beforePath="$PROJECT_DIR$/out/production/projectpeersim/manet/algorithm/gossip/GossipProtocolImpl.class" afterPath="$PROJECT_DIR$/out/production/projectpeersim/manet/algorithm/gossip/GossipProtocolImpl.class" />
       <change beforePath="$PROJECT_DIR$/out/production/projectpeersim/manet/communication/EmitterProba.class" afterPath="$PROJECT_DIR$/out/production/projectpeersim/manet/communication/EmitterProba.class" />
       <change beforePath="$PROJECT_DIR$/out/production/projectpeersim/manet/communication/EmitterSimple.class" afterPath="$PROJECT_DIR$/out/production/projectpeersim/manet/communication/EmitterSimple.class" />
-      <change beforePath="$PROJECT_DIR$/projectpeersim.iml" afterPath="$PROJECT_DIR$/projetpeersim.iml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -62,8 +56,8 @@
       <file leaf-file-name="confPro27.co" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/conf/confPro27.co">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="2" column="16" lean-forward="false" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
+            <state relative-caret-position="408">
+              <caret line="8" column="30" lean-forward="true" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
               <folding />
             </state>
           </provider>
@@ -110,6 +104,7 @@
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
       <list>
+        <option value="Saalik &lt;saalik.hatia@outlook.com&gt;" />
         <option value="saalik.hatia@outlook.com" />
       </list>
     </option>
@@ -612,14 +607,22 @@
       <option name="project" value="LOCAL" />
       <updated>1517596105814</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Added Jar">
+      <created>1517598213407</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1517598213407</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="503" y="35" width="3200" height="1765" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13254927" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13254927" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297491" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -666,7 +669,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added file" />
     <MESSAGE value="Finished code" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finished code" />
+    <MESSAGE value="Added Jar" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Jar" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -948,8 +952,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/conf/confPro27.co">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="2" column="16" lean-forward="false" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
+        <state relative-caret-position="408">
+          <caret line="8" column="30" lean-forward="true" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
           <folding />
         </state>
       </provider>

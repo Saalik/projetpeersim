@@ -1,17 +1,6 @@
 Portée, SPI, SD, Dt, Et/Dt, EDt/Dt
-125 , 1, 1, <filter object at 0x7efe75243780>
-250 , 1, 1, <filter object at 0x7efe75236ba8>
-375 , 1, 1, <filter object at 0x7efe75243da0>
-500 , 1, 1, <filter object at 0x7efe752436a0>
-625 , 1, 1, <filter object at 0x7efe75243668>
-750 , 1, 1, <filter object at 0x7efe75236a20>
-875 , 1, 1, <filter object at 0x7efe752435f8>
-1000 , 1, 1, <filter object at 0x7efe752436d8>
-125 , 3, 3, <filter object at 0x7efe75243828>
-250 , 3, 3, <filter object at 0x7efe75236a20>
-375 , 3, 3, <filter object at 0x7efe75243d68>
-500 , 3, 3, <filter object at 0x7efe75243668>
-625 , 3, 3, <filter object at 0x7efe75243588>
-750 , 3, 3, <filter object at 0x7efe75236a20>
-875 , 3, 3, <filter object at 0x7efe75243d68>
-1000 , 3, 3, <filter object at 0x7efe75243828>
+125 , 1, 1, <filter object at 0x7f539ff35780>
+250 , 1, 1, <filter object at 0x7f539ff28ba8>
+375 , 1, 1, <filter object at 0x7f539ff35da0>
+500 , 1, 1, <filter object at 0x7f539ff356a0>
+625 , 1, 1, 

@@ -38,7 +38,7 @@ protocol.position.height 1500
 protocol.position.width 1500
 
 protocol.emitter.latency 90
-protocol.emitter.scope 125
+protocol.emitter.scope 625
 
 protocol.neighbor.period 3000
 protocol.neighbor.timer 3500
