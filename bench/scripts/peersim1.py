@@ -4,6 +4,7 @@ from shutil import move
 from os import remove
 import sys
 import subprocess
+import re
 
 
 
@@ -11,18 +12,18 @@ def main(argv):
     sys.stdout = open("../benches/"+argv[0]+".bench", 'w')
     tmp = 125
     conf = '../../src/conf/confPro1.co'
-    print("Portée, SPI, SD, Dt, Et/Dt, EDt/Dt")
+    print("Portée: SPI: SD: Dt: Et/Dt: EDt/Dt")
     for i in [125, 250, 375, 500, 625, 750, 875, 1000]:
-        print(i,", 1, 1, ", end='')        
+        print(i,": 1: 1", end='')        
         create_next_conf(conf,  "scope "+str(tmp), "scope "+str(i))
         result = subprocess.Popen(['java', '-jar',"../../projectpeersim.jar", conf], stdout=subprocess.PIPE, encoding="UTF-8")
         pp = result.communicate()[0].rstrip()
-        filtered = filter(lambda x: not re.match(r'^\s*$', x), pp)
+        filtered = "".join(list(filter(lambda x: not re.match(r'^\s*$', x), pp)))
         print(filtered)
         tmp = i
     create_next_conf(conf, "Strategy1InitNext", "Strategy3InitNext")
     for i in [125, 250, 375, 500, 625, 750, 875, 1000]:
-        print(i,", 3, 3, ", end='')
+        print(i,": 3: 3", end='')
         create_next_conf(conf,  "scope "+str(tmp), "scope "+str(i))
         result = subprocess.Popen(['java', '-jar',"../../projectpeersim.jar", conf], stdout=subprocess.PIPE, encoding="UTF-8")
         pp = result.communicate()[0].rstrip()

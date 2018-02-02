@@ -64,11 +64,11 @@ public class GossipControler implements Control{
 //            System.out.println();
             double avgAtt = getAvgAtt();
             double avgER = getAvgER();
-            System.out.println("Pourcentage de Att :"+(avgAtt*100/Network.size()));
-            System.out.println("Ecart type de Att :"+standardDeviation(allAtt, avgAtt));
-            System.out.println("Pourcentage de ER :"+(avgER*100));
+            System.out.print(":"+(avgAtt*100/Network.size()));
+            System.out.print(":"+standardDeviation(allAtt, avgAtt));
+            System.out.print(":"+(avgER*100));
             //System.out.println("Pourcent de ER "+(avgER*100/Network.size()));
-            System.out.println("Ecart type de ER :"+standardDeviation(allER, avgER));
+            System.out.println(":"+standardDeviation(allER, avgER));
 
             System.exit(1);
         }

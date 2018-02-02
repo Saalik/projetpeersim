@@ -45,9 +45,9 @@ public class DensityControler implements Control{
         //210 pour Simul exo 1 et 330 simul exo 2
         if(tNum == iteration) {
             //System.out.println("Tnum " + tNum);
-            System.out.println("D(t): " + aa);
-            System.out.println("E(t)/D(t): " + (asd / aa));
-            System.out.println("ED(t)/D(t): " + (edt / aa));
+            System.out.print(": " + aa);
+            System.out.print(": " + (asd / aa));
+            System.out.println(": " + (edt / aa));
         }
         return false;
     }

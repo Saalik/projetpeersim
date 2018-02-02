@@ -1,6 +1,4 @@
-Portée, SPI, SD, Dt, Et/Dt, EDt/Dt
-125 , 1, 1, <filter object at 0x7f539ff35780>
-250 , 1, 1, <filter object at 0x7f539ff28ba8>
-375 , 1, 1, <filter object at 0x7f539ff35da0>
-500 , 1, 1, <filter object at 0x7f539ff356a0>
-625 , 1, 1, 
+Portée: SPI: SD: Dt: Et/Dt: EDt/Dt
+125 : 1: 1:18.797333333333334:0.3335350143832896:0.10831432753407315
+250 : 1: 1:18.797333333333334:0.3335350143832896:0.10831432753407315
+375 : 1: 1
