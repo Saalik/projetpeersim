@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/projectpeersim.iml" filepath="$PROJECT_DIR$/projectpeersim.iml" />
+      <module fileurl="file://$PROJECT_DIR$/projetpeersim.iml" filepath="$PROJECT_DIR$/projetpeersim.iml" />
     </modules>
   </component>
 </project>

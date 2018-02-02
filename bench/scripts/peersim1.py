@@ -15,17 +15,19 @@ def main(argv):
     for i in [125, 250, 375, 500, 625, 750, 875, 1000]:
         print(i,", 1, 1, ", end='')        
         create_next_conf(conf,  "scope "+str(tmp), "scope "+str(i))
-        result = subprocess.Popen(['java', '-jar',"../../projetpeersim.jar", conf], stdout=subprocess.PIPE, encoding="UTF-8")
+        result = subprocess.Popen(['java', '-jar',"../../projectpeersim.jar", conf], stdout=subprocess.PIPE, encoding="UTF-8")
         pp = result.communicate()[0].rstrip()
-        print(pp)
+        filtered = filter(lambda x: not re.match(r'^\s*$', x), pp)
+        print(filtered)
         tmp = i
     create_next_conf(conf, "Strategy1InitNext", "Strategy3InitNext")
     for i in [125, 250, 375, 500, 625, 750, 875, 1000]:
         print(i,", 3, 3, ", end='')
         create_next_conf(conf,  "scope "+str(tmp), "scope "+str(i))
-        result = subprocess.Popen(['java', '-jar',"../../projetpeersim.jar", conf], stdout=subprocess.PIPE, encoding="UTF-8")
-        pp = result.communicate()[0].rstrip()        
-        print(pp)
+        result = subprocess.Popen(['java', '-jar',"../../projectpeersim.jar", conf], stdout=subprocess.PIPE, encoding="UTF-8")
+        pp = result.communicate()[0].rstrip()
+        filtered = filter(lambda x: not re.match(r'^\s*$', x), pp)
+        print(filtered)
         tmp = i 
     create_next_conf(conf, "Strategy3InitNext", "Strategy1InitNext")
     create_next_conf(conf, "scope 1000", "scope 125")
