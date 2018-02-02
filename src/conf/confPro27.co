@@ -4,7 +4,7 @@ network.size 200
 
 init.initialisation Initialisation2
 
-#control.graph GraphicalMonitor
+#scontrol.graph GraphicalMonitor
 control.graph.positionprotocol position
 control.graph.time_slow 0.0002
 control.graph.step 1
