@@ -1,0 +1,45 @@
+simulation.endtime 28800000
+random.seed 5
+network.size 50
+
+init.initialisation Initialisation
+
+#control.graph GraphicalMonitor
+control.graph.positionprotocol position
+control.graph.time_slow 0.0002
+control.graph.step 1
+control.graph.emitter emitter
+control.graph.neighborprotocol neighbor
+
+control.dc DensityControler
+control.dc.from 3600000
+control.dc.step 120000
+control.dc.neighborprotocol neighbor
+control.dc.iteration 210
+
+
+initial_position_strategy Strategy1InitNext
+initial_position_strategy.positionprotocol position
+initial_position_strategy.emitter emitter
+
+next_destination_strategy Strategy1InitNext
+next_destination_strategy.positionprotocol position
+next_destination_strategy.emitter emitter
+
+
+protocol.position PositionProtocolImpl
+protocol.emitter EmitterImpl
+protocol.neighbor NeighborProtocolImpl
+
+protocol.position.pause 1200000
+protocol.position.minspeed 1
+protocol.position.maxspeed 20
+protocol.position.height 1500
+protocol.position.width 1500
+
+protocol.emitter.latency 90
+protocol.emitter.scope 125
+
+protocol.neighbor.period 3000
+protocol.neighbor.timer 3500
+protocol.emitter.positionprotocol position
