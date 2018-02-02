@@ -79,6 +79,7 @@ public class EmitterSimple extends EmitterFlooder {
 //            System.out.println("Gossip over number of node reached "+ reached);
     }
 
+
 //    Returns true if allowed to reset false if still messages in transit
     @Override
     public boolean reset() {

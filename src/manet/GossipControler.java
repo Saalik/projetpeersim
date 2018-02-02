@@ -43,8 +43,10 @@ public class GossipControler implements Control{
                     EmitterFlooder ems = (EmitterFlooder) n.getProtocol(emitter_pid);
                     if (it >= 1) {
                         if (i == 0) {
+
                             double reached = ems.getReached();
                             double rebroad = ems.getRebroad();
+                            System.out.println(reached+" with "+rebroad+" broadcast");
                             allAtt.add(it - 1, reached);
                             allER.add(it - 1, ((reached - rebroad) / reached));
                         }
@@ -63,7 +65,7 @@ public class GossipControler implements Control{
 //            System.out.println();
             double avgAtt = getAvgAtt();
             double avgER = getAvgER();
-//            System.out.println("Moyenne de Att "+avgAtt);
+            System.out.println(allAtt);
             System.out.println("Pourcentage de Att :"+(avgAtt*100/Network.size()));
             System.out.println("Ecart type de Att :"+standardDeviation(allAtt, avgAtt));
             System.out.println("Pourcentage de ER :"+(avgER*100));

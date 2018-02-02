@@ -76,7 +76,4 @@ public class GossipProtocolImpl implements GossipProtocol, EDProtocol{
         return res;
     }
 
-    public void printer (){
-        System.out.println("IN PRINTER");
-    }
 }
