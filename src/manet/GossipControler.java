@@ -46,7 +46,6 @@ public class GossipControler implements Control{
 
                             double reached = ems.getReached();
                             double rebroad = ems.getRebroad();
-                            System.out.println(reached+" with "+rebroad+" broadcast");
                             allAtt.add(it - 1, reached);
                             allER.add(it - 1, ((reached - rebroad) / reached));
                         }

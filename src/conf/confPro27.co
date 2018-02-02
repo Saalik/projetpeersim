@@ -8,7 +8,7 @@ init.initialisation Initialisation2
 control.graph.positionprotocol position
 control.graph.time_slow 0.0002
 control.graph.step 1
-control.graph.emitter emitter
+control.graph.emitter emitterK
 control.graph.neighborprotocol neighbor
 
 #control.dc DensityControler
