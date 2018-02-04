@@ -27,7 +27,7 @@ def main(argv):
         create_next_conf(conf,  "scope "+str(tmp), "scope "+str(i))
         result = subprocess.Popen(['java', '-jar',"../../projectpeersim.jar", conf], stdout=subprocess.PIPE, encoding="UTF-8")
         pp = result.communicate()[0].rstrip()
-        filtered = filter(lambda x: not re.match(r'^\s*$', x), pp)
+        filtered = "".join(list(filter(lambda x: not re.match(r'^\s*$', x), pp)))
         print(filtered)
         tmp = i 
     create_next_conf(conf, "Strategy3InitNext", "Strategy1InitNext")

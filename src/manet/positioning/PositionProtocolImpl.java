@@ -8,7 +8,6 @@ import peersim.edsim.EDSimulator;
 
 public class PositionProtocolImpl implements PositionProtocol, EDProtocol {
 
-	
 	public static final String loop_event="LOOPEVENT";
 	
 	private static final String PAR_MAXSPEED="maxspeed";

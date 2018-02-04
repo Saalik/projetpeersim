@@ -23,6 +23,7 @@ public class EmitterVoisinsNei extends EmitterFlooder {
     private ArrayList<Long> myNeighbors;
     private ArrayList<Long> hisNeighbors;
     private final String PAR_K = "k";
+    private Node me;
     private static double k;
 
     public EmitterVoisinsNei(String prefix) {
@@ -35,7 +36,6 @@ public class EmitterVoisinsNei extends EmitterFlooder {
 
     @Override
     public void emit(Node host, Message msg) {
-
         if (!arrived) {
             reached++;
             myNeighbors = getThemNeighbors(host);
@@ -47,32 +47,35 @@ public class EmitterVoisinsNei extends EmitterFlooder {
                     PositionProtocolImpl postmp = (PositionProtocolImpl) n.getProtocol(getPosition_pid());
                     if (postmp.getCurrentPosition().distance(hostpos.getCurrentPosition()) < getScope() && !(n.equals(host))) {
                         EDSimulator.add(getLatency(), new Message(msg.getIdSrc(),
-                                n.getID(), msg.getTag(), myNeighbors, gossip_pid), n, gossip_pid);
+                                n.getID(), "GOSSIP", myNeighbors, gossip_pid), n, gossip_pid);
                         incrementTransit();
                     }
                 }
-            }else if (forced){
-                rebroad++;
-                PositionProtocolImpl hostpos = (PositionProtocolImpl) host.getProtocol(getPosition_pid());
-                for (int i = 0; i < Network.size(); i++) {
-                    Node n = Network.get(i);
-                    PositionProtocolImpl postmp = (PositionProtocolImpl) n.getProtocol(getPosition_pid());
-                    if (postmp.getCurrentPosition().distance(hostpos.getCurrentPosition()) < getScope() && !(n.equals(host))) {
-                        EDSimulator.add(getLatency(), new Message(msg.getIdSrc(),
-                                n.getID(), msg.getTag(), myNeighbors, gossip_pid), n, gossip_pid);
-                        incrementTransit();
-                    }
-                }
-            } else{
+            }else{
+                me =host;
                 timersLaunched++;
                 broadcastFailed = !broadcastFailed;
                 hisNeighbors = (ArrayList<Long>) msg.getContent();
                 myNeighbors.removeAll(hisNeighbors);
-                long latency = CommonState.r.nextLong(100)+200;
+                long latency = CommonState.r.nextLong(100)+400;
                 EDSimulator.add(latency, new Message(msg.getIdSrc(),
                         msg.getIdSrc(), "TIMER", myNeighbors, gossip_pid), host, gossip_pid);
             }
             arrived = !arrived;
+        }else if (forced){
+            //System.out.println("forced");
+            rebroad++;
+            PositionProtocolImpl hostpos = (PositionProtocolImpl) host.getProtocol(getPosition_pid());
+            for (int i = 0; i < Network.size(); i++) {
+                Node n = Network.get(i);
+                PositionProtocolImpl postmp = (PositionProtocolImpl) n.getProtocol(getPosition_pid());
+                if (postmp.getCurrentPosition().distance(hostpos.getCurrentPosition()) < getScope() && !(n.equals(host))) {
+                    EDSimulator.add(getLatency(), new Message(msg.getIdSrc(),
+                            n.getID(), "GOSSIP", myNeighbors, gossip_pid), n, gossip_pid);
+                    incrementTransit();
+                }
+            }
+            forced = !forced;
         }else {
             if (broadcastFailed) {
                 hisNeighbors = (ArrayList<Long>) msg.getContent();
@@ -112,14 +115,20 @@ public class EmitterVoisinsNei extends EmitterFlooder {
 
     @Override
     public void timerUp(){
-        timersLaunched--;
-//        System.out.println(myNeighbors);
+        //System.out.println(myNeighbors);
         if(!myNeighbors.isEmpty()){
-//            System.out.println("TIMER IS USED");
             forced= !forced;
-        }//else {
-//            System.out.println("TIMER IS WASTED");
+        }
+        timersLaunched--;
 //        }
+    }
+    @Override
+    public Object clone() {
+        EmitterVoisinsNei res = null;
+        res = (EmitterVoisinsNei) super.clone();
+        res.hisNeighbors = new ArrayList<>();
+        res.myNeighbors = new ArrayList<>();
+        return res;
     }
 
     public int getReached() {

@@ -27,23 +27,17 @@ public class EmitterImpl implements Emitter{
         this.position_pid=Configuration.getPid(prefix+"."+PAR_POSITIONPROTOCOLPID);
     }
 
-
     @Override
     public void emit(Node host, Message msg) {
-//        System.out.println("");
         int neighbor= Configuration.lookupPid("neighbor");
-        //NeighborProtocolImpl npi = (NeighborProtocolImpl) host.getProtocol(neighbor);
         PositionProtocolImpl hostpos = (PositionProtocolImpl) host.getProtocol(position_pid);
         for(int i = 0; i< Network.size() ; i++) {
             Node n = Network.get(i);
             PositionProtocolImpl postmp = (PositionProtocolImpl) n.getProtocol(position_pid);
-            if(postmp.getCurrentPosition().distance(hostpos.getCurrentPosition()) < scope && !(n.equals(host)) ) {
-                EDSimulator.add(latency, new Message(msg.getIdSrc(), n.getID(), "PROBE","PROBE", neighbor), n, neighbor);
-                //System.out.println("Imma emit shit");
+            if(postmp.getCurrentPosition().distance(hostpos.getCurrentPosition()) < getScope() && !(n.equals(host)) ) {
+                EDSimulator.add(getLatency(), new Message(msg.getIdSrc(), n.getID(), "PROBE","PROBE", neighbor), n, neighbor);
             }
         }
-
-
     }
 
     public int getPosition_pid() {
@@ -71,6 +65,4 @@ public class EmitterImpl implements Emitter{
         }
         return res;
     }
-
-
 }

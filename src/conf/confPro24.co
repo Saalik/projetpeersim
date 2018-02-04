@@ -1,6 +1,6 @@
 simulation.endtime 43200000
 random.seed 5
-network.size 200
+network.size 20
 
 init.initialisation Initialisation2
 

@@ -1,6 +1,6 @@
 simulation.endtime 43200000
 random.seed 5
-network.size 60
+network.size 20
 
 init.initialisation Initialisation2
 
@@ -22,7 +22,7 @@ control.gc.from 3600000
 control.gc.step 1
 control.gc.gossipprotocol gossip
 control.gc.emitter emitter
-control.gc.number 50
+control.gc.number 500
 
 protocol.gossip GossipProtocolImpl
 protocol.gossip.emitter emitter
@@ -39,7 +39,7 @@ protocol.emitter.latency 90
 protocol.emitter.scope 300
 protocol.emitter.positionprotocol position
 protocol.emitter.gossip gossip
-protocol.emitter.proba 0.2
+protocol.emitter.proba 0.3
 
 
 #protocol.neighbor NeighborProtocolImpl

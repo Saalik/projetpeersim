@@ -33,7 +33,19 @@ public class EmitterDistanceNei extends EmitterFlooder {
     @Override
     public void emit(Node host, Message msg) {
 //        System.out.println("Call to EmitterSimple.emit()");
-        if (!arrived) {
+        if (forced){
+            rebroad++;
+            PositionProtocolImpl hostpos = (PositionProtocolImpl) host.getProtocol(getPosition_pid());
+            for (int i = 0; i < Network.size(); i++) {
+                Node n = Network.get(i);
+                PositionProtocolImpl postmp = (PositionProtocolImpl) n.getProtocol(getPosition_pid());
+                if (postmp.getCurrentPosition().distance(hostpos.getCurrentPosition()) < getScope() && !(n.equals(host))) {
+                    EDSimulator.add(getLatency(), new Message(msg.getIdSrc(),
+                            n.getID(), msg.getTag(), myNeighbors, gossip_pid), n, gossip_pid);
+                    incrementTransit();
+                }
+            }
+        }else if (!arrived) {
             reached++;
             //System.out.println("Received Gossip: " + host.getID() + " Transit " + transitMsgs);
             myNeighbors = getThemNeighbors(host);
@@ -50,19 +62,7 @@ public class EmitterDistanceNei extends EmitterFlooder {
                         incrementTransit();
                     }
                 }
-            }else if (forced){
-                rebroad++;
-                PositionProtocolImpl hostpos = (PositionProtocolImpl) host.getProtocol(getPosition_pid());
-                for (int i = 0; i < Network.size(); i++) {
-                    Node n = Network.get(i);
-                    PositionProtocolImpl postmp = (PositionProtocolImpl) n.getProtocol(getPosition_pid());
-                    if (postmp.getCurrentPosition().distance(hostpos.getCurrentPosition()) < getScope() && !(n.equals(host))) {
-                        EDSimulator.add(getLatency(), new Message(msg.getIdSrc(),
-                                n.getID(), msg.getTag(), myNeighbors, gossip_pid), n, gossip_pid);
-                        incrementTransit();
-                    }
-                }
-            } else{
+            }else{
                 timersLaunched++;
                 broadcastFailed = !broadcastFailed;
                 hisNeighbors = (ArrayList<Long>) msg.getContent();
