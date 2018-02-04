@@ -32,7 +32,6 @@ public class EmitterDistanceNei extends EmitterFlooder {
 
     @Override
     public void emit(Node host, Message msg) {
-//        System.out.println("Call to EmitterSimple.emit()");
         if (forced){
             rebroad++;
             PositionProtocolImpl hostpos = (PositionProtocolImpl) host.getProtocol(getPosition_pid());
@@ -47,9 +46,7 @@ public class EmitterDistanceNei extends EmitterFlooder {
             }
         }else if (!arrived) {
             reached++;
-            //System.out.println("Received Gossip: " + host.getID() + " Transit " + transitMsgs);
             myNeighbors = getThemNeighbors(host);
-//            System.out.println(myNeighbors);
             if(reached == 1 || CommonState.r.nextDouble()<getProba(host, msg) ) {
                 rebroad++;
                 PositionProtocolImpl hostpos = (PositionProtocolImpl) host.getProtocol(getPosition_pid());
@@ -82,8 +79,6 @@ public class EmitterDistanceNei extends EmitterFlooder {
         decrementTransit();
     }
 
-
-
     private ArrayList<Long> getThemNeighbors(Node host) {
         ArrayList<Long> tmpNei = new ArrayList<>();
         PositionProtocolImpl hostpos = (PositionProtocolImpl) host.getProtocol(getPosition_pid());
@@ -98,8 +93,6 @@ public class EmitterDistanceNei extends EmitterFlooder {
     }
 
     private double getProba(Node host,Message msg) {
-        int proba = 0;
-        double v = 0;
         PositionProtocolImpl hostpos = (PositionProtocolImpl) host.getProtocol(getPosition_pid());
         for(int i = 0; i< Network.size() ; i++) {
             Node n = Network.get(i);
@@ -114,13 +107,9 @@ public class EmitterDistanceNei extends EmitterFlooder {
     @Override
     public void timerUp(){
         timersLaunched--;
-//        System.out.println(myNeighbors);
         if(!myNeighbors.isEmpty()){
-//            System.out.println("TIMER IS USED");
             forced= !forced;
-        }//else {
-//            System.out.println("TIMER IS WASTED");
-//        }
+        }
     }
 
     public int getReached() {

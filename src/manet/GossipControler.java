@@ -37,7 +37,6 @@ public class GossipControler implements Control{
             chosen = Network.get(CommonState.r.nextInt(Network.size()));
             GossipProtocolImpl gp = (GossipProtocolImpl) chosen.getProtocol(gossip_pid);
             if(gp.gossipOver(chosen)) {
-//                System.out.println("Gossip number "+(it+1));
                 for (int i = 0; i < Network.size(); i++) {
                     Node n = Network.get(i);
                     EmitterFlooder ems = (EmitterFlooder) n.getProtocol(emitter_pid);
@@ -56,20 +55,12 @@ public class GossipControler implements Control{
                 it++;
             }
         }else{
-//            EmitterFlooder ems = (EmitterFlooder) Network.get(0).getProtocol(emitter_pid);
-//            double reached = ems.getReached();
-//            double rebroad = ems.getRebroad();
-//            allAtt.add(it - 1, reached);
-//            allER.add(it - 1, ((reached - rebroad) / reached));
-//            System.out.println();
             double avgAtt = getAvgAtt();
             double avgER = getAvgER();
             System.out.print(":"+(avgAtt*100/Network.size()));
             System.out.print(":"+standardDeviation(allAtt, avgAtt));
             System.out.print(":"+(avgER*100));
-            //System.out.println("Pourcent de ER "+(avgER*100/Network.size()));
             System.out.println(":"+standardDeviation(allER, avgER));
-
             System.exit(1);
         }
         return false;
@@ -84,8 +75,6 @@ public class GossipControler implements Control{
         standardDeviation = Math.sqrt(standardDeviation);
         return standardDeviation;
     }
-
-
 
     private double getAvgAtt() {
         double avg = 0;
@@ -102,5 +91,4 @@ public class GossipControler implements Control{
         }
         return avg/num;
     }
-
 }

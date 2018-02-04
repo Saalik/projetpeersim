@@ -10,9 +10,7 @@ import peersim.edsim.EDSimulator;
 
 public class EmitterDistance extends EmitterFlooder {
     private static int transitMsgs = 0;
-
     private static int reached = 0;
-
     private static int rebroad = 0;
     private boolean arrived = false;
     private static int uselessMsgs = 0;
@@ -27,10 +25,8 @@ public class EmitterDistance extends EmitterFlooder {
 
     @Override
     public void emit(Node host, Message msg) {
-//        System.out.println("Call to EmitterSimple.emit()");
         if (!arrived) {
             reached++;
-            //System.out.println("Received Gossip: " + host.getID() + " Transit " + transitMsgs);
             if(CommonState.r.nextDouble()<getProba(host, msg) || reached == 1) {
                 rebroad++;
                 PositionProtocolImpl hostpos = (PositionProtocolImpl) host.getProtocol(getPosition_pid());
@@ -52,8 +48,6 @@ public class EmitterDistance extends EmitterFlooder {
     }
 
     private double getProba(Node host,Message msg) {
-        int proba = 0;
-        double v = 0;
         PositionProtocolImpl hostpos = (PositionProtocolImpl) host.getProtocol(getPosition_pid());
         for(int i = 0; i< Network.size() ; i++) {
             Node n = Network.get(i);
@@ -64,7 +58,6 @@ public class EmitterDistance extends EmitterFlooder {
         }
         return -1;
     }
-
 
     public int getReached() {
         return reached;
@@ -93,8 +86,6 @@ public class EmitterDistance extends EmitterFlooder {
     @Override
     public void decrementTransit(){
         transitMsgs--;
-//        if(transitMsgs <= 0)
-//            System.out.println("Gossip over number of node reached "+ reached);
     }
 
     //    Returns true if allowed to reset false if still messages in transit

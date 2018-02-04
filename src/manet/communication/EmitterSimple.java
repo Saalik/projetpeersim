@@ -24,18 +24,20 @@ public class EmitterSimple extends EmitterFlooder {
 
     @Override
     public void emit(Node host, Message msg) {
-//        System.out.println("Call to EmitterSimple.emit()");
         if (!arrived) {
             reached++;
-            //System.out.println("Received Gossip: " + host.getID() + " Transit " + transitMsgs);
             rebroad++;
-            PositionProtocolImpl hostpos = (PositionProtocolImpl) host.getProtocol(getPosition_pid());
+            PositionProtocolImpl hostpos = (PositionProtocolImpl)
+                    host.getProtocol(getPosition_pid());
             for (int i = 0; i < Network.size(); i++) {
                 Node n = Network.get(i);
-                PositionProtocolImpl postmp = (PositionProtocolImpl) n.getProtocol(getPosition_pid());
-                if (postmp.getCurrentPosition().distance(hostpos.getCurrentPosition()) < getScope() && !(n.equals(host))) {
+                PositionProtocolImpl postmp = (PositionProtocolImpl)
+                        n.getProtocol(getPosition_pid());
+                if (postmp.getCurrentPosition().distance(
+                        hostpos.getCurrentPosition()) < getScope() && !(n.equals(host))) {
                     EDSimulator.add(getLatency(), new Message(msg.getIdSrc(),
-                            n.getID(), msg.getTag(), msg.getContent(), gossip_pid), n, gossip_pid);
+                            n.getID(), msg.getTag(), msg.getContent(),
+                            gossip_pid), n, gossip_pid);
                     incrementTransit();
                 }
             }
@@ -73,11 +75,7 @@ public class EmitterSimple extends EmitterFlooder {
     }
 
     @Override
-    public void decrementTransit(){
-        transitMsgs--;
-//        if(transitMsgs <= 0)
-//            System.out.println("Gossip over number of node reached "+ reached);
-    }
+    public void decrementTransit(){ transitMsgs--; }
 
 
 //    Returns true if allowed to reset false if still messages in transit

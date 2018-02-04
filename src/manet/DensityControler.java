@@ -22,7 +22,6 @@ public class DensityControler implements Control{
     private double aa = 0;
     private double asd = 0;
 
-
     public DensityControler(String prefix) {
         this.neighbor_pid =Configuration.getPid(prefix+"."+PAR_NEIGHBOR);
         iteration =Configuration.getInt(prefix+"."+PAR_ITERATIONS);
@@ -30,28 +29,20 @@ public class DensityControler implements Control{
 
     @Override
     public boolean execute() {
-
         tNum++;
-        //System.out.println("Step: " + tNum);
         double avg = average();
         double sd = standardDeviation();
         aa = averageAverage();
         asd = averageStandardDivision();
         double edt = eDt();
-
-        //System.out.println("Moyenne d'Ecart-Type E(t): "+asd);
-        //System.out.println("Ecart-Type Ei(t): "+sd);
-        //System.out.println("Moyenne Di(t): "+avg);
-        //210 pour Simul exo 1 et 330 simul exo 2
+        //itération = 210 pour Simul exo 1 et 330 simul exo 2
         if(tNum == iteration) {
-            //System.out.println("Tnum " + tNum);
             System.out.print(": " + aa);
             System.out.print(": " + (asd / aa));
             System.out.println(": " + (edt / aa));
         }
         return false;
     }
-
 
     private double average (){
         double average = 0;

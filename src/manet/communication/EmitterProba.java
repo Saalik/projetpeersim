@@ -27,12 +27,9 @@ public class EmitterProba extends EmitterFlooder {
 
     @Override
     public void emit(Node host, Message msg) {
-//        System.out.println("Call to EmitterSimple.emit()");
         if (!arrived) {
             reached++;
-            //System.out.println("Received Gossip: " + host.getID() + " Transit " + transitMsgs);
-            if(CommonState.r.nextDouble() <proba || reached == 1) {
-
+            if(CommonState.r.nextDouble() <getProba() || reached == 1) {
                 rebroad++;
                 PositionProtocolImpl hostpos = (PositionProtocolImpl) host.getProtocol(getPosition_pid());
                 for (int i = 0; i < Network.size(); i++) {
@@ -52,6 +49,9 @@ public class EmitterProba extends EmitterFlooder {
         decrementTransit();
     }
 
+    public double getProba() {
+        return proba;
+    }
 
     public int getReached() {
         return reached;
@@ -78,11 +78,7 @@ public class EmitterProba extends EmitterFlooder {
     }
 
     @Override
-    public void decrementTransit(){
-        transitMsgs--;
-//        if(transitMsgs <= 0)
-//            System.out.println("Gossip over number of node reached "+ reached);
-    }
+    public void decrementTransit(){ transitMsgs--; }
 
     //    Returns true if allowed to reset false if still messages in transit
     @Override

@@ -63,7 +63,6 @@ public class EmitterVoisinsNei extends EmitterFlooder {
             }
             arrived = !arrived;
         }else if (forced){
-            //System.out.println("forced");
             rebroad++;
             PositionProtocolImpl hostpos = (PositionProtocolImpl) host.getProtocol(getPosition_pid());
             for (int i = 0; i < Network.size(); i++) {
@@ -115,12 +114,10 @@ public class EmitterVoisinsNei extends EmitterFlooder {
 
     @Override
     public void timerUp(){
-        //System.out.println(myNeighbors);
         if(!myNeighbors.isEmpty()){
             forced= !forced;
         }
         timersLaunched--;
-//        }
     }
     @Override
     public Object clone() {
