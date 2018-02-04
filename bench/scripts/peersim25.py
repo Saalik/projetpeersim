@@ -32,6 +32,7 @@ def main(argv):
             filtered = "".join(list(filter(lambda x: not re.match(r'^\s*$', x), pp)))
             print(filtered)
             tmp = i 
+        tp = p
         create_next_conf(conf, "size 200", "size 20")
     create_next_conf(conf, "proba 1", "proba 0.2")
     

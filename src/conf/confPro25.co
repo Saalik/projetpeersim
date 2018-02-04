@@ -39,7 +39,7 @@ protocol.emitter.latency 90
 protocol.emitter.scope 300
 protocol.emitter.positionprotocol position
 protocol.emitter.gossip gossip
-protocol.emitter.proba 0.3
+protocol.emitter.proba 0.2
 
 
 #protocol.neighbor NeighborProtocolImpl

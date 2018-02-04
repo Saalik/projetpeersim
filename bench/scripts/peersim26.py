@@ -34,7 +34,7 @@ def main(argv):
             tmp = i
         tp = p 
         create_next_conf(conf, "size 200", "size 20")
-    #create_next_conf(conf, "k 20", "k 1")
+    create_next_conf(conf, "k 20", "k 1")
     
     #print("All bench done")
 
