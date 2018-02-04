@@ -57,7 +57,7 @@ public class EmitterVoisinsNei extends EmitterFlooder {
                 broadcastFailed = !broadcastFailed;
                 hisNeighbors = (ArrayList<Long>) msg.getContent();
                 myNeighbors.removeAll(hisNeighbors);
-                long latency = CommonState.r.nextLong(100)+400;
+                long latency = CommonState.r.nextLong(100)+100;
                 EDSimulator.add(latency, new Message(msg.getIdSrc(),
                         msg.getIdSrc(), "TIMER", myNeighbors, gossip_pid), host, gossip_pid);
             }

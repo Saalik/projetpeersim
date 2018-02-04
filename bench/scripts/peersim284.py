@@ -10,25 +10,25 @@ import re
 
 def main(argv):
     sys.stdout = open("../benches/"+argv[0]+".bench", 'w')
-    conf = '../../src/conf/confPro21.co'
+    conf = '../../src/conf/confPro284.co'
     print("Noeuds: Att: EAtt: ER: EER")
     tmp = 20
     for i in range(20, 100, 10):
-        print(i, end='')
+        print(i, end='')        
         create_next_conf(conf,  "size "+str(tmp), "size "+str(i))
-        result = subprocess.Popen(['java', '-jar', "../../projectpeersim.jar", conf], stdout=subprocess.PIPE, encoding="UTF-8")
-        pp = result.communicate()[0].rstrip()
-        filtered = "".join(list(filter(lambda x: not re.match(r'^\s*$', x), pp)))
-        print(filtered)
-        tmp = i    
-    for i in range(100, 220, 20):
-        print(i, end='')
-        create_next_conf(conf,  "size "+str(tmp), "size "+str(i))
-        result = subprocess.Popen(['java', '-jar', "../../projectpeersim.jar", conf], stdout=subprocess.PIPE, encoding="UTF-8")
+        result = subprocess.Popen(['java', '-jar',"../../projectpeersim.jar", conf], stdout=subprocess.PIPE, encoding="UTF-8")
         pp = result.communicate()[0].rstrip()
         filtered = "".join(list(filter(lambda x: not re.match(r'^\s*$', x), pp)))
         print(filtered)
         tmp = i
+    for i in range(100, 220, 20):
+        print(i, end='')
+        create_next_conf(conf,  "size "+str(tmp), "size "+str(i))
+        result = subprocess.Popen(['java', '-jar',"../../projectpeersim.jar", conf], stdout=subprocess.PIPE, encoding="UTF-8")
+        pp = result.communicate()[0].rstrip()
+        filtered = "".join(list(filter(lambda x: not re.match(r'^\s*$', x), pp)))
+        print(filtered)
+        tmp = i 
     create_next_conf(conf, "size 200", "size 20")
     
     #print("All bench done")
@@ -43,9 +43,6 @@ def create_next_conf(file, oldParam, newParam):
     remove(file)
     move(abs_path, file)
     return
-
-
-
 
 
 if __name__ == "__main__":

@@ -44,6 +44,7 @@ public class EmitterDistanceNei extends EmitterFlooder {
                     incrementTransit();
                 }
             }
+            forced = !forced;
         }else if (!arrived) {
             reached++;
             myNeighbors = getThemNeighbors(host);
@@ -64,7 +65,7 @@ public class EmitterDistanceNei extends EmitterFlooder {
                 broadcastFailed = !broadcastFailed;
                 hisNeighbors = (ArrayList<Long>) msg.getContent();
                 myNeighbors.removeAll(hisNeighbors);
-                long latency = CommonState.r.nextLong(100)+200;
+                long latency = CommonState.r.nextLong(100)+100;
                 EDSimulator.add(latency, new Message(msg.getIdSrc(),
                         msg.getIdSrc(), "TIMER", myNeighbors, gossip_pid), host, gossip_pid);
             }
