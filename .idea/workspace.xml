@@ -7,10 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="31fcf336-3e20-4a5f-9fe3-17cd0869cf44" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/bench/benches/peersim25.py.bench" afterPath="$PROJECT_DIR$/bench/benches/peersim25.py.bench" />
-      <change beforePath="$PROJECT_DIR$/bench/scripts/peersim25.py" afterPath="$PROJECT_DIR$/bench/scripts/peersim25.py" />
-      <change beforePath="$PROJECT_DIR$/bench/scripts/peersim26.py" afterPath="$PROJECT_DIR$/bench/scripts/peersim26.py" />
-      <change beforePath="$PROJECT_DIR$/src/conf/confPro25.co" afterPath="$PROJECT_DIR$/src/conf/confPro25.co" />
+      <change beforePath="$PROJECT_DIR$/src/conf/confPro26.co" afterPath="$PROJECT_DIR$/src/conf/confPro26.co" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -46,21 +43,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="EmitterVoisins.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="EmitterVoisins.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/manet/communication/EmitterVoisins.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="348">
               <caret line="46" column="13" lean-forward="true" selection-start-line="46" selection-start-column="13" selection-end-line="46" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="confPro26.co" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/conf/confPro26.co">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1134">
-              <caret line="42" column="0" lean-forward="true" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -1165,14 +1152,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/manet/communication/EmitterVoisins.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="348">
-          <caret line="46" column="13" lean-forward="true" selection-start-line="46" selection-start-column="13" selection-end-line="46" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/conf/confPro27.co">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-657">
@@ -1185,6 +1164,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1134">
           <caret line="42" column="0" lean-forward="true" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/manet/communication/EmitterVoisins.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="348">
+          <caret line="46" column="13" lean-forward="true" selection-start-line="46" selection-start-column="13" selection-end-line="46" selection-end-column="13" />
           <folding />
         </state>
       </provider>
