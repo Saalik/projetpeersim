@@ -1,6 +1,6 @@
 simulation.endtime 43200000
 random.seed 5
-network.size 100
+network.size 20
 
 init.initialisation Initialisation2
 
@@ -39,7 +39,7 @@ protocol.emitter.latency 90
 protocol.emitter.scope 300
 protocol.emitter.positionprotocol position
 protocol.emitter.gossip gossip
-protocol.emitter.k 5
+protocol.emitter.k 1
 
 
 protocol.neighbor NeighborProtocolImpl

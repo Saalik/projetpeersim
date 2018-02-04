@@ -12,7 +12,7 @@ def main(argv):
     sys.stdout = open("../benches/"+argv[0]+".bench", 'w')
     conf = '../../src/conf/confPro26.co'
     print("k: Noeuds: Att: EAtt: ER: EER")
-    tp = 0.2
+    tp = 1
     for p in [1, 5, 10, 20]:
         create_next_conf(conf,  "k "+str(tp), "k "+str(p))
         tmp = 20
@@ -31,9 +31,10 @@ def main(argv):
             pp = result.communicate()[0].rstrip()
             filtered = "".join(list(filter(lambda x: not re.match(r'^\s*$', x), pp)))
             print(filtered)
-            tmp = i 
+            tmp = i
+        tp = p 
         create_next_conf(conf, "size 200", "size 20")
-    create_next_conf(conf, "k 20", "k 1")
+    #create_next_conf(conf, "k 20", "k 1")
     
     #print("All bench done")
 

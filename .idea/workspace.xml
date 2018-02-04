@@ -8,7 +8,8 @@
   <component name="ChangeListManager">
     <list default="true" id="31fcf336-3e20-4a5f-9fe3-17cd0869cf44" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/projectpeersim.jar" afterPath="$PROJECT_DIR$/projectpeersim.jar" />
+      <change beforePath="$PROJECT_DIR$/bench/scripts/peersim26.py" afterPath="$PROJECT_DIR$/bench/scripts/peersim26.py" />
+      <change beforePath="$PROJECT_DIR$/src/conf/confPro26.co" afterPath="$PROJECT_DIR$/src/conf/confPro26.co" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -34,8 +35,8 @@
       <file leaf-file-name="EmitterDistance.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/manet/communication/EmitterDistance.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2601">
-              <caret line="57" column="9" lean-forward="true" selection-start-line="57" selection-start-column="9" selection-end-line="57" selection-end-column="9" />
+            <state relative-caret-position="1008">
+              <caret line="57" column="9" lean-forward="false" selection-start-line="57" selection-start-column="9" selection-end-line="57" selection-end-column="9" />
               <folding>
                 <element signature="e#2832#2833#0" expanded="true" />
                 <element signature="e#2861#2862#0" expanded="true" />
@@ -44,11 +45,31 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="EmitterVoisins.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/manet/communication/EmitterVoisins.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="348">
+              <caret line="46" column="13" lean-forward="true" selection-start-line="46" selection-start-column="13" selection-end-line="46" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="confPro26.co" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/conf/confPro26.co">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1134">
+              <caret line="42" column="0" lean-forward="true" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="EmitterDistanceNei.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/manet/communication/EmitterDistanceNei.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -74,10 +95,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="EmitterVoisinsNei.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="EmitterVoisinsNei.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/manet/communication/EmitterVoisinsNei.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1135">
+            <state relative-caret-position="2448">
               <caret line="56" column="0" lean-forward="false" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
               <folding>
                 <element signature="e#5276#5277#0" expanded="true" />
@@ -121,7 +142,6 @@
         <option value="$PROJECT_DIR$/bench/scripts/peersim1.py" />
         <option value="$PROJECT_DIR$/src/conf/confPro24.co" />
         <option value="$PROJECT_DIR$/src/conf/confPro25.co" />
-        <option value="$PROJECT_DIR$/src/conf/confPro26.co" />
         <option value="$PROJECT_DIR$/src/conf/confPro284.co" />
         <option value="$PROJECT_DIR$/src/conf/confPro283.co" />
         <option value="$PROJECT_DIR$/src/manet/positioning/PositionProtocolImpl.java" />
@@ -135,6 +155,7 @@
         <option value="$PROJECT_DIR$/src/conf/confPro27.co" />
         <option value="$PROJECT_DIR$/src/manet/communication/EmitterDistanceNei.java" />
         <option value="$PROJECT_DIR$/src/manet/communication/EmitterVoisinsNei.java" />
+        <option value="$PROJECT_DIR$/src/conf/confPro26.co" />
       </list>
     </option>
   </component>
@@ -217,7 +238,7 @@
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="SearchEverywhereHistoryKey" value="nei&#9;FILE&#9;file:///home/saalik/eclipse-workspace/projetpeersim/src/manet/communication/EmitterVoisinsNei.java&#10;conf&#9;FILE&#9;file:///home/saalik/eclipse-workspace/projetpeersim/src/conf/confPro27.co&#10;c8&#9;FILE&#9;file:///home/saalik/eclipse-workspace/projetpeersim/src/conf/confPro284.co&#10;Distance&#9;FILE&#9;file:///home/saalik/eclipse-workspace/projetpeersim/src/manet/communication/EmitterDistanceNei.java&#10;Emitterdi&#9;FILE&#9;file:///home/saalik/eclipse-workspace/projetpeersim/src/manet/communication/EmitterDistance.java&#10;emitt&#9;FILE&#9;file:///home/saalik/eclipse-workspace/projetpeersim/src/manet/communication/EmitterVoisins.java&#10;emit&#9;FILE&#9;file:///home/saalik/eclipse-workspace/projetpeersim/src/manet/communication/EmitterProba.java&#10;emitter&#9;FILE&#9;file:///home/saalik/eclipse-workspace/projetpeersim/src/manet/communication/EmitterSimple.java&#10;emitterIm&#9;FILE&#9;file:///home/saalik/eclipse-workspace/projetpeersim/src/manet/communication/EmitterImpl.java&#10;goss&#9;PSI&#9;JAVA://manet.GossipControler&#10;EmitterFl&#9;FILE&#9;file:///home/saalik/eclipse-workspace/projetpeersim/src/manet/communication/EmitterFlooder.java&#10;den&#9;FILE&#9;file:///home/saalik/eclipse-workspace/projetpeersim/src/manet/DensityControler.java&#10;EmitterIm&#9;FILE&#9;file:///home/saalik/eclipse-workspace/projetpeersim/src/manet/communication/EmitterImpl.java&#10;emitterI&#9;FILE&#9;file:///home/saalik/eclipse-workspace/projetpeersim/src/manet/communication/EmitterImpl.java&#10;pos&#9;PSI&#9;JAVA://manet.positioning.PositionProtocolImpl&#10;voisn&#9;FILE&#9;file:///home/saalik/eclipse-workspace/projetpeersim/src/manet/communication/EmitterVoisinsNei.java&#10;vois&#9;FILE&#9;file:///home/saalik/eclipse-workspace/projetpeersim/src/manet/communication/EmitterVoisins.java&#10;g&#9;FILE&#9;file:///home/saalik/eclipse-workspace/projetpeersim/src/manet/algorithm/gossip/GossipProtocolImpl.java&#10;EmitterNei&#9;PSI&#9;JAVA://manet.communication.EmitterDistanceNei&#10;confpro&#9;FILE&#9;file:///home/saalik/eclipse-workspace/projetpeersim/src/conf/confPro26.co&#10;con&#9;FILE&#9;file:///home/saalik/eclipse-workspace/projetpeersim/src/conf/confPro25.co&#10;distan&#9;PSI&#9;JAVA://manet.communication.EmitterDistance&#10;confpro8&#9;FILE&#9;file:///home/saalik/eclipse-workspace/projectpeersim/src/conf/confPro284.co&#10;confpro27&#9;FILE&#9;file:///home/saalik/eclipse-workspace/projectpeersim/src/conf/confPro27.co&#10;confPro25&#9;FILE&#9;file:///home/saalik/eclipse-workspace/projectpeersim/src/conf/confPro25.co" />
+    <property name="SearchEverywhereHistoryKey" value="6&#9;FILE&#9;file:///home/saalik/eclipse-workspace/projetpeersim/src/conf/confPro26.co&#10;Voisins&#9;FILE&#9;file:///home/saalik/eclipse-workspace/projetpeersim/src/manet/communication/EmitterVoisins.java&#10;nei&#9;FILE&#9;file:///home/saalik/eclipse-workspace/projetpeersim/src/manet/communication/EmitterVoisinsNei.java&#10;conf&#9;FILE&#9;file:///home/saalik/eclipse-workspace/projetpeersim/src/conf/confPro27.co&#10;c8&#9;FILE&#9;file:///home/saalik/eclipse-workspace/projetpeersim/src/conf/confPro284.co&#10;Distance&#9;FILE&#9;file:///home/saalik/eclipse-workspace/projetpeersim/src/manet/communication/EmitterDistanceNei.java&#10;Emitterdi&#9;FILE&#9;file:///home/saalik/eclipse-workspace/projetpeersim/src/manet/communication/EmitterDistance.java&#10;emitt&#9;FILE&#9;file:///home/saalik/eclipse-workspace/projetpeersim/src/manet/communication/EmitterVoisins.java&#10;emit&#9;FILE&#9;file:///home/saalik/eclipse-workspace/projetpeersim/src/manet/communication/EmitterProba.java&#10;emitter&#9;FILE&#9;file:///home/saalik/eclipse-workspace/projetpeersim/src/manet/communication/EmitterSimple.java&#10;emitterIm&#9;FILE&#9;file:///home/saalik/eclipse-workspace/projetpeersim/src/manet/communication/EmitterImpl.java&#10;goss&#9;PSI&#9;JAVA://manet.GossipControler&#10;EmitterFl&#9;FILE&#9;file:///home/saalik/eclipse-workspace/projetpeersim/src/manet/communication/EmitterFlooder.java&#10;den&#9;FILE&#9;file:///home/saalik/eclipse-workspace/projetpeersim/src/manet/DensityControler.java&#10;EmitterIm&#9;FILE&#9;file:///home/saalik/eclipse-workspace/projetpeersim/src/manet/communication/EmitterImpl.java&#10;emitterI&#9;FILE&#9;file:///home/saalik/eclipse-workspace/projetpeersim/src/manet/communication/EmitterImpl.java&#10;pos&#9;PSI&#9;JAVA://manet.positioning.PositionProtocolImpl&#10;voisn&#9;FILE&#9;file:///home/saalik/eclipse-workspace/projetpeersim/src/manet/communication/EmitterVoisinsNei.java&#10;vois&#9;FILE&#9;file:///home/saalik/eclipse-workspace/projetpeersim/src/manet/communication/EmitterVoisins.java&#10;g&#9;FILE&#9;file:///home/saalik/eclipse-workspace/projetpeersim/src/manet/algorithm/gossip/GossipProtocolImpl.java&#10;EmitterNei&#9;PSI&#9;JAVA://manet.communication.EmitterDistanceNei&#10;confpro&#9;FILE&#9;file:///home/saalik/eclipse-workspace/projetpeersim/src/conf/confPro26.co&#10;con&#9;FILE&#9;file:///home/saalik/eclipse-workspace/projetpeersim/src/conf/confPro25.co&#10;distan&#9;PSI&#9;JAVA://manet.communication.EmitterDistance&#10;confpro8&#9;FILE&#9;file:///home/saalik/eclipse-workspace/projectpeersim/src/conf/confPro284.co&#10;confpro27&#9;FILE&#9;file:///home/saalik/eclipse-workspace/projectpeersim/src/conf/confPro27.co&#10;confPro25&#9;FILE&#9;file:///home/saalik/eclipse-workspace/projectpeersim/src/conf/confPro25.co" />
     <property name="GenerateAntBuildDialog.enableUiFormCompile" value="true" />
     <property name="GenerateAntBuildDialog.forceTargetJdk" value="true" />
     <property name="GenerateAntBuildDialog.backupFiles" value="true" />
@@ -717,7 +738,14 @@
       <option name="project" value="LOCAL" />
       <updated>1517747398753</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Jar Final">
+      <created>1517747453480</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1517747453480</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -727,16 +755,16 @@
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13873994" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297491" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27813712" sideWeight="0.49748743" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27813712" sideWeight="0.49748743" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297491" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -760,14 +788,15 @@
     <MESSAGE value="NeighborProtocolImpl ready" />
     <MESSAGE value="cleaning" />
     <MESSAGE value="jar" />
-    <option name="LAST_COMMIT_MESSAGE" value="jar" />
+    <MESSAGE value="Jar Final" />
+    <option name="LAST_COMMIT_MESSAGE" value="Jar Final" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/conf/confPro24.co">
+    <entry file="file://$PROJECT_DIR$/src/conf/confPro27.co">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="2" column="15" lean-forward="false" selection-start-line="2" selection-start-column="15" selection-end-line="2" selection-end-column="15" />
@@ -775,11 +804,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/conf/confPro24.co">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="2" column="15" lean-forward="false" selection-start-line="2" selection-start-column="15" selection-end-line="2" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/conf/confPro25.co">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1224">
           <caret line="24" column="21" lean-forward="false" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -795,10 +830,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1326">
           <caret line="26" column="8" lean-forward="true" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="83" />
-          <folding>
-            <element signature="e#1695#1696#0" expanded="true" />
-            <element signature="e#1730#1731#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -821,7 +852,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="2" column="15" lean-forward="false" selection-start-line="2" selection-start-column="15" selection-end-line="2" selection-end-column="15" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -837,7 +867,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1989">
           <caret line="45" column="50" lean-forward="false" selection-start-line="45" selection-start-column="50" selection-end-line="45" selection-end-column="50" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -845,7 +874,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2040">
           <caret line="48" column="85" lean-forward="false" selection-start-line="48" selection-start-column="85" selection-end-line="48" selection-end-column="85" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -868,7 +896,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="2" column="15" lean-forward="false" selection-start-line="2" selection-start-column="15" selection-end-line="2" selection-end-column="15" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -884,7 +911,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1989">
           <caret line="45" column="50" lean-forward="false" selection-start-line="45" selection-start-column="50" selection-end-line="45" selection-end-column="50" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -892,7 +918,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2040">
           <caret line="48" column="85" lean-forward="false" selection-start-line="48" selection-start-column="85" selection-end-line="48" selection-end-column="85" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -915,7 +940,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="2" column="15" lean-forward="false" selection-start-line="2" selection-start-column="15" selection-end-line="2" selection-end-column="15" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -939,7 +963,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1989">
           <caret line="45" column="50" lean-forward="true" selection-start-line="45" selection-start-column="50" selection-end-line="45" selection-end-column="50" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -947,7 +970,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2040">
           <caret line="48" column="85" lean-forward="false" selection-start-line="48" selection-start-column="85" selection-end-line="48" selection-end-column="85" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1011,7 +1033,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="2" column="15" lean-forward="false" selection-start-line="2" selection-start-column="15" selection-end-line="2" selection-end-column="15" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1019,15 +1040,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1224">
           <caret line="24" column="21" lean-forward="false" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/conf/confPro26.co">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="2" column="16" lean-forward="false" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1035,7 +1047,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2652">
           <caret line="58" column="5" lean-forward="false" selection-start-line="58" selection-start-column="5" selection-end-line="58" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1051,7 +1062,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="591">
           <caret line="118" column="4" lean-forward="true" selection-start-line="118" selection-start-column="4" selection-end-line="118" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1059,7 +1069,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-687">
           <caret line="12" column="40" lean-forward="false" selection-start-line="12" selection-start-column="40" selection-end-line="12" selection-end-column="40" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1068,8 +1077,8 @@
         <state relative-caret-position="204">
           <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="40" selection-end-column="1" />
           <folding>
-            <element signature="e#361#362#0" expanded="true" />
-            <element signature="e#389#390#0" expanded="true" />
+            <element signature="e#361#362#0" expanded="false" />
+            <element signature="e#389#390#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1078,10 +1087,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1084">
           <caret line="55" column="81" lean-forward="false" selection-start-line="55" selection-start-column="81" selection-end-line="55" selection-end-column="81" />
-          <folding>
-            <element signature="e#3341#3342#0" expanded="true" />
-            <element signature="e#3369#3370#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1089,7 +1094,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
           <caret line="16" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="93" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1097,10 +1101,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1048">
           <caret line="41" column="0" lean-forward="true" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
-          <folding>
-            <element signature="e#1695#1696#0" expanded="true" />
-            <element signature="e#1730#1731#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1108,7 +1108,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1116,18 +1115,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="816">
           <caret line="27" column="13" lean-forward="true" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
-          <folding>
-            <element signature="e#1969#1970#0" expanded="true" />
-            <element signature="e#1997#1998#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/manet/communication/EmitterVoisins.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2703">
-          <caret line="59" column="15" lean-forward="true" selection-start-line="54" selection-start-column="4" selection-end-line="65" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1150,25 +1137,14 @@
     <entry file="file://$PROJECT_DIR$/src/manet/communication/EmitterDistanceNei.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/manet/communication/EmitterDistance.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2601">
-          <caret line="57" column="9" lean-forward="true" selection-start-line="57" selection-start-column="9" selection-end-line="57" selection-end-column="9" />
-          <folding>
-            <element signature="e#2832#2833#0" expanded="true" />
-            <element signature="e#2861#2862#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/manet/communication/EmitterVoisinsNei.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1135">
+        <state relative-caret-position="2448">
           <caret line="56" column="0" lean-forward="false" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
           <folding>
             <element signature="e#5276#5277#0" expanded="true" />
@@ -1182,6 +1158,33 @@
             <element signature="e#5630#5631#0" expanded="true" />
             <element signature="e#5659#5660#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/manet/communication/EmitterDistance.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1008">
+          <caret line="57" column="9" lean-forward="false" selection-start-line="57" selection-start-column="9" selection-end-line="57" selection-end-column="9" />
+          <folding>
+            <element signature="e#2832#2833#0" expanded="true" />
+            <element signature="e#2861#2862#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/manet/communication/EmitterVoisins.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="348">
+          <caret line="46" column="13" lean-forward="true" selection-start-line="46" selection-start-column="13" selection-end-line="46" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/conf/confPro26.co">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1134">
+          <caret line="42" column="0" lean-forward="true" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
