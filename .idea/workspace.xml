@@ -8,15 +8,6 @@
   <component name="ChangeListManager">
     <list default="true" id="31fcf336-3e20-4a5f-9fe3-17cd0869cf44" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/projectpeersim.jar" afterPath="$PROJECT_DIR$/projectpeersim.jar" />
-      <change beforePath="$PROJECT_DIR$/src/conf/confPro27.co" afterPath="$PROJECT_DIR$/src/conf/confPro27.co" />
-      <change beforePath="$PROJECT_DIR$/src/manet/DensityControler.java" afterPath="$PROJECT_DIR$/src/manet/DensityControler.java" />
-      <change beforePath="$PROJECT_DIR$/src/manet/GossipControler.java" afterPath="$PROJECT_DIR$/src/manet/GossipControler.java" />
-      <change beforePath="$PROJECT_DIR$/src/manet/communication/EmitterDistance.java" afterPath="$PROJECT_DIR$/src/manet/communication/EmitterDistance.java" />
-      <change beforePath="$PROJECT_DIR$/src/manet/communication/EmitterDistanceNei.java" afterPath="$PROJECT_DIR$/src/manet/communication/EmitterDistanceNei.java" />
-      <change beforePath="$PROJECT_DIR$/src/manet/communication/EmitterProba.java" afterPath="$PROJECT_DIR$/src/manet/communication/EmitterProba.java" />
-      <change beforePath="$PROJECT_DIR$/src/manet/communication/EmitterSimple.java" afterPath="$PROJECT_DIR$/src/manet/communication/EmitterSimple.java" />
-      <change beforePath="$PROJECT_DIR$/src/manet/communication/EmitterVoisinsNei.java" afterPath="$PROJECT_DIR$/src/manet/communication/EmitterVoisinsNei.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -711,7 +702,14 @@
       <option name="project" value="LOCAL" />
       <updated>1517742017558</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="cleaning">
+      <created>1517747336282</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1517747336282</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -752,7 +750,8 @@
     <MESSAGE value="Changement au script" />
     <MESSAGE value="EmitterImpl Ready" />
     <MESSAGE value="NeighborProtocolImpl ready" />
-    <option name="LAST_COMMIT_MESSAGE" value="NeighborProtocolImpl ready" />
+    <MESSAGE value="cleaning" />
+    <option name="LAST_COMMIT_MESSAGE" value="cleaning" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
